@@ -1,0 +1,30 @@
+<html>
+  <header>
+    <title>HtmlWithJs</title>
+  </header>
+  <body>
+    <div>Email : <input type="text" id = "email" /></div><br>
+    <div>Password: <input type="password" id = "pass"/></div> 
+
+    <h1 id="test"></h1>
+    <button onclick="myFunction()">Click Me</button>
+  </body>
+  <script>
+    function myFunction() {
+        console.log(document.getElementById("email").value)
+        console.log(document.getElementById("pass").value)
+      if(document.getElementById("email").value == document.getElementById("pass").value)
+      {
+       var text = (document.getElementById("test").innerHTML =
+        "you have successfully logged in");
+        
+      }
+      else{
+        var text = (document.getElementById("test").innerHTML =
+        "wrong credential");
+        
+      }
+      
+    }
+  </script>
+</html>
